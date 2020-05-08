@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">王风宝第二次大作业</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="diqv">
+        <item></item>
+        <item>新乡</item>
+        <item>郑州</item>
+        <item>焦作</item>
+        <item>开封</item>
+        <item>洛阳</item>
+        <item>周口</item>
+    </string-array>
+
+</resources>

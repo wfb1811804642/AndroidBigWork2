@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1AD6E5"
+        android:gravity="center"
+        android:text="人员去向登记表"
+        android:textColor="#170DD3"
+        android:textSize="25sp" />
+    <!-- 图片 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tp" />
+    <!-- 姓名 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_weight="1"
+            android:text="姓名："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="请输入姓名"
+            android:singleLine="true" />
+    </LinearLayout>
+    <!-- 电话 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_weight="1"
+            android:text="电话："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_tel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLines="11"
+            android:singleLine="true" />
+    </LinearLayout>
+    <!-- 健康情况 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="健康情况："
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_jiankang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="健康" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="又发烧、咳嗽等症状" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他" />
+    </RadioGroup>
+    <!-- 其他 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_weight="1"
+            android:text="其他："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_qita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="其他症状(选填)"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_weight="1"
+            android:text="去向："
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner_qvxiang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/diqv" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="提交" />
+
+</LinearLayout>
